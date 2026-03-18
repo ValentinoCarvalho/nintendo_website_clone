@@ -1,0 +1,12 @@
+:root {
+
+    --main_color: #e60012;
+    --second_color: #484848;
+    --background_white: white;
+    --dark_main_color: #ac000d;
+}
+
+.linkStyle:hover {
+    text-decoration: underline 2px ;
+    color: var(--dark_main_color);
+}

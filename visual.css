@@ -1,0 +1,77 @@
+:root {
+
+    --main_color: #e60012;
+    --second_color: #484848;
+    --background_white: white;
+}
+
+h2,
+h3,
+p {
+    color: var(--second_color);
+}
+
+header {
+    border-bottom: var(--second_color) solid 1px;
+}
+
+.searchBtn {
+    background-image: url(./assets/search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 4px;
+    text-align: left;
+    padding: 0 15px 0 35px;
+    border-style: none;
+    border-radius: 15px;
+    
+}
+
+.storeLogo {
+    background-color: var(--main_color);
+    padding: 10px;
+    width: 215px;
+}
+
+.iconsImg {
+    filter: invert(16%) sepia(59%) saturate(6287%) hue-rotate(348deg) brightness(86%) contrast(115%);
+    height: 25px;
+}
+
+hr {
+    background-color: var(--second_color);
+    height: 1px;
+    width: 100%;
+}
+
+.anchoredButton {
+    background-color: var(--main_color);
+    text-decoration: none;
+    color: var(--background_white);
+}
+
+.linkStyle,
+li>a {
+    color: var(--main_color);
+    text-decoration: none;
+}
+
+.footer_logo {
+    background-color: var(--main_color);
+    height: 80px;
+    width: 100%;
+}
+
+.logo_css {
+    color: var(--background_white);
+    border: solid 7px;
+    border-radius: 55px;
+    padding: 0 10px 0 10px;
+}
+
+ul {
+    border-left: solid 1px var(--second_color)
+}
+
+li {
+    list-style: none;
+}
