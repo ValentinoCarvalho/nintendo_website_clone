@@ -23,9 +23,19 @@ Olá, meu nove é Valentino:
   Esse ano, iniciei minha carreira na área de TI e, até o momento (primeiro semestre de 2026), adquiri algumas habilidades em HTML, CSS e JavaScript, entretanto, todo esse conhecimento guardado não estava me beneficiando em nada. Ao contrário, notei que, dentro de uma semana, tive uma dificuldade enorme para me lembrar de alguns conceitos básicos de cada ferramenta, e isso me incomodou muito e, por conta disso, decidi aplicar todo esse conhecimento com um desafio real. Diante disso decidi criar um clone do site da Nintendo.
 
 <h3>Site da Nintendo (10 de abril de 2026):</h3>
+
 <img alt="image" src="https://github.com/user-attachments/assets/8f62859d-b8f7-420d-9660-312b9012ff87" />
 
-  <h2 id="inicio_do_projeto">Inicio do projeto:</h2>
+<h2 id="inicio_do_projeto">Parte 1(Início):</h2>
+<img alt="image" src="https://github.com/user-attachments/assets/1f292bda-fb09-4a73-9cca-317fe570ecac" />
+
+<h2>Parte 2(carrosséis):</h2>
+Nessa parte, o JavaScript entrará em cena. Por esse motivo, esse projeto ficou em hiato por um mês inteiro, devido a complexidade que seria desenvolver esse elemento. Mas, uma coisa que aprendi a ter nessa vida é resiliência. Não irei desistir por conta de um carrossel.
+
+O primeiro passo para desenvolver qualquer elemento, como mencionado no supracitado, é separá-lo em partes:
+<img width="1336" height="631" alt="image" src="https://github.com/user-attachments/assets/fb6d1d41-e8a6-44ce-a19d-62b022734504" />
+
 
 
 Texto feito com muito carinho por Valentino Carvalho :)
+
