@@ -35,6 +35,9 @@ Nessa parte, o JavaScript entrará em cena. Por esse motivo, esse projeto ficou 
 O primeiro passo para desenvolver qualquer elemento, como mencionado no supracitado, é separá-lo em partes:
 <img width="1336" height="631" alt="image" src="https://github.com/user-attachments/assets/fb6d1d41-e8a6-44ce-a19d-62b022734504" />
 
+<img width="1794" height="6188" alt="image" src="https://github.com/user-attachments/assets/522b2da8-38d1-4d56-a636-9b1196206965" />
+  
+
 <img width="1345" height="628" alt="image" src="https://github.com/user-attachments/assets/1ce99304-b2ff-4527-b9e8-c33a4e9e00c7" />
 
 
