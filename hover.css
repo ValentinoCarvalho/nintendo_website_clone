@@ -1,12 +1,11 @@
-:root {
-
-    --main_color: #e60012;
-    --second_color: #484848;
-    --background_white: white;
-    --dark_main_color: #ac000d;
-}
 
 .linkStyle:hover {
-    text-decoration: underline 2px ;
+    text-decoration: underline 2px;
     color: var(--dark_main_color);
 }
+
+#anchoredHeaderElement__hearth:hover {
+    filter: invert(16%) sepia(59%) saturate(6287%) hue-rotate(348deg) brightness(86%) contrast(115%);
+}
+
+.anchoredButton:hover {background-color: var(--dark_main_color);}

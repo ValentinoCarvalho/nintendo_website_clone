@@ -1,0 +1,383 @@
+.carouselContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carouselContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.carouselContent {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.carouselImage {
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
+.carouselTextContent {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 150px;
+    padding: 0 50px 0 50px;
+    width: 100%;
+    background-color: white;
+
+}
+
+.carouselTextContent>img {
+    height: 60px;
+}
+
+.carouselTextContent_h2 {
+    width: 70%;
+}
+
+/*  */
+
+.subCarouselContainer {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    border: none;
+    scroll-behavior: smooth;
+    anchor-name: --subCarouselContainer;
+    padding-top:10px ;
+}
+
+.subCarouselContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.subCarouselContainer::scroll-button(right),
+.subCarouselContainer::scroll-button(left) {
+    content: '>';
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    position: absolute;
+    position-anchor: --subCarouselContainer;
+    position-area: right center;
+    translate: -5px -15px;
+    padding: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scale(1);
+
+}
+
+.subCarouselContainer::scroll-button(right):hover,
+.subCarouselContainer::scroll-button(left):hover {
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scale(1.02);
+}
+
+.subCarouselContainer::scroll-button(left) {
+    content: '<';
+    border-radius: 15px;
+    position-area: left center;
+    translate: 5px -15px;
+}
+
+.subCarouselContainer::scroll-button(right):disabled,
+.subCarouselContainer::scroll-button(left):disabled {
+    opacity: 0.2;
+    cursor: default;
+}
+
+
+.subCarousel {
+    width: 270px;
+    border-radius: 8px;
+    outline: solid 1px rgb(214, 214, 214);
+    margin-right: 35px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    transform: scale(1);
+}
+
+.subCarousel>img {
+    width: 270px;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.subCarouselText {
+    width: 100%;
+    padding: 15px;
+}
+
+.subCarouselText>h5 {
+
+    font-weight: 400;
+    height: 100px;
+
+}
+
+.miniLabel {
+    background-color: red;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 5px 0 5px;
+    border-radius: 8px;
+}
+
+.miniLabel>h3 {
+    color: white;
+    font-size: small;
+
+}
+
+.subCarouselText>h3 {
+    margin-top: 10px;
+    border-left: solid red;
+    padding-left: 5px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.subCarousel:hover {
+    transition: transform 0.3s;
+    transform: scale(1.02);
+
+    background-color: aliceblue;
+}
+
+/*  */
+
+.subCarouselContainerSecond {
+    display: flex;
+    overflow: scroll;
+    gap: 30px;
+    padding: 0 0 40px 0;
+    align-items: end;
+    scroll-behavior: smooth;
+    anchor-name: --subCarouselContainerSecond;
+    scroll-snap-type: x mandatory;
+
+}
+
+
+
+.subCarouselSecond {
+    scroll-snap-align: start;
+    width: 250px;
+    height: 100%;
+    border-radius: 8px;
+    outline: solid 1px rgb(214, 214, 214);
+    transition: transform 0.3s;
+    transform: scale(1);
+
+}
+
+.subCarouselSecond:hover {
+    background-color: aliceblue;
+    transform: scale(1.02);
+
+}
+
+.nintendoDevice {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    height: 25px;
+    padding: 3px;
+    border-bottom: solid white;
+    display: none;
+}
+
+.nintendoDevice>h4 {
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 3px;
+}
+
+.nintendoDevice>img {
+    fill: white;
+    height: 15px;
+}
+
+.subCarouselSecond>img {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.subCarouselSecondText {
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subCarouselSecondText>h6 {
+    font-weight: lighter;
+}
+
+.subCarouselSecond_tagAndBtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subCarouselSecond_tagAndBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.subCarouselSecond_tagOnly {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subCarouselSecond_tagOnly>h6 {
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+
+.subCarouselSecond_btnOnly {
+    background-color: #ffffff00;
+    background-image: url(./assets/heart-fill.svg);
+    background-size: 100%;
+    border-style: none;
+    height: 20px;
+    width: 20px;
+}
+
+.subCarouselContainerSecond::-webkit-scrollbar {
+    display: none;
+}
+
+.subCarouselContainerSecond::scroll-button(left),
+.subCarouselContainerSecond::scroll-button(right) {
+    content: '<';
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    position: absolute;
+    position-anchor: --subCarouselContainerSecond;
+    position-area: left center;
+    translate: 50px -7px;
+    padding: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scale(1);
+}
+
+.subCarouselContainerSecond::scroll-button(left):hover,
+.subCarouselContainerSecond::scroll-button(right):hover {
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scale(1.02);
+}
+
+.subCarouselContainerSecond::scroll-button(right) {
+    content: '>';
+    position-area: right center;
+    translate: -50px -7px;
+    border-radius: 15px;
+
+
+}
+
+.subCarouselContainerSecond::scroll-button(right):disabled,
+.subCarouselContainerSecond::scroll-button(left):disabled {
+    opacity: 0.2;
+    cursor: default;
+}
+
+
+/*  */
+
+.subCarouselContainerThird {
+    display: flex;
+    overflow: scroll;
+    gap: 30px;
+    padding: 0 0 40px 0;
+    align-items: end;
+    scroll-behavior: smooth;
+    anchor-name: --subCarouselContainerThird;
+    scroll-snap-type: x mandatory;
+}
+
+
+
+
+.subCarouselContainerThird::-webkit-scrollbar {
+    display: none;
+}
+
+.subCarouselContainerThird::scroll-button(left),
+.subCarouselContainerThird::scroll-button(right) {
+    content: '<';
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    position: absolute;
+    position-anchor: --subCarouselContainerThird;
+    position-area: left center;
+    translate: 50px -7px;
+    padding: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scale(1);
+}
+
+.subCarouselContainerThird::scroll-button(left):hover,
+.subCarouselContainerThird::scroll-button(right):hover {
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scale(1.02);
+}
+
+.subCarouselContainerThird::scroll-button(right) {
+    content: '>';
+    position-area: right center;
+    translate: -50px -7px;
+
+    border-radius: 15px;
+
+
+}
+
+.subCarouselContainerThird::scroll-button(right):disabled,
+.subCarouselContainerThird::scroll-button(left):disabled {
+    opacity: 0.2;
+    cursor: default;
+}

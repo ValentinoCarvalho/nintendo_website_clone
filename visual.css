@@ -3,13 +3,19 @@
     --main_color: #e60012;
     --second_color: #484848;
     --background_white: white;
+    --dark_main_color: #ac000d;
 }
+
+
+body {background-color: var(--background_white);}
 
 h2,
 h3,
 p {
     color: var(--second_color);
 }
+
+
 
 header {
     border-bottom: var(--second_color) solid 1px;
@@ -23,7 +29,6 @@ header {
     padding: 0 15px 0 35px;
     border-style: none;
     border-radius: 15px;
-    
 }
 
 .storeLogo {
@@ -32,10 +37,21 @@ header {
     width: 215px;
 }
 
+#anchoredHeaderElement__login {
+    border: solid var(--main_color);
+    border-radius: 40px;
+}
+
+#anchoredHeaderElement__login>h3 {
+    color: var(--main_color);
+}
+
 .iconsImg {
     filter: invert(16%) sepia(59%) saturate(6287%) hue-rotate(348deg) brightness(86%) contrast(115%);
-    height: 25px;
+    height: 15px;
 }
+
+#anchoredHeaderElement__hearth {filter: invert(27%) sepia(14%) saturate(15%) hue-rotate(353deg) brightness(94%) contrast(90%);}
 
 hr {
     background-color: var(--second_color);
@@ -74,4 +90,8 @@ ul {
 
 li {
     list-style: none;
+}
+
+.second_footer {
+    background-color: var(--second_color);
 }

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nintendo :: Clone</title>
+    <link rel="icon" href="https://assets.nintendo.com/image/upload/ncom/icons/fav-icons/favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -15,6 +16,9 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./visual.css">
     <link rel="stylesheet" href="./hover.css">
+    <link rel="stylesheet" href="./carousel.css">
+    <link rel="stylesheet" href="./scrollBtns.css">
+    <link rel="stylesheet" href="./news.css">
 
 
     <style>
@@ -28,54 +32,233 @@
 
         <div class="storeLogo">
             <h2 class="logo_css">Nintendo®</h2>
-
         </div>
 
         <section class="Container_Header">
             <div class="anchoredHeaderElement"><img src="./assets/compass.svg" alt="" class="iconsImg">
-                <h3>Explorar</h3>
+                <a href="">
+                    <h3 class="header_text">Explorar</h3>
+                </a>
             </div>
             <div class="anchoredHeaderElement"><img src="./assets/bag-fill.svg" alt="" class="iconsImg">
-                <h3>Comprar</h3>
+                <a href="">
+                    <h3 class="header_text">Comprar</h3>
+                </a>
             </div>
             <div class="anchoredHeaderElement">
                 <img src="./assets/shield-fill-plus.svg" alt="" class="iconsImg">
-                <h3>Assistência</h3>
+                <a href="">
+                    <h3 class="header_text">Assistência</h3>
+                </a>
             </div>
         </section>
 
-        <section class="Container_Header">
+        <section class="Container_Header" id="search_favorites_login">
+
             <div class="anchoredHeaderElement"><button class="searchBtn">Pesquisar</button>
             </div>
-            <div class="anchoredHeaderElement"><img src="./assets/heart-fill.svg" alt="" class="iconsImg">
-            </div>
-            <div class="anchoredHeaderElement">
-                <img src="./assets/person-fill.svg" alt="" class="iconsImg">
-                <h3>Iniciar sessão / Criar uma conta</h3>
-            </div>
-            <div class="anchoredHeaderElement">
-                <img src="./assets/" alt="" class="iconsImg">
-            </div>
-        </section>
 
-        <section>
+            <div class="anchoredHeaderElement" id="anchoredHeaderElement__hearth"><a href=""><img
+                        src="./assets/heart-fill.svg" alt=""></a>
+            </div>
 
-            <div></div>
-            <div><i class="bi bi-heart-fill"></i></div>
-            <div></div>
-            <div></div>
+            <div class="anchoredHeaderElement">
+                <a href="" id="anchoredHeaderElement__login">
+                    <img src="./assets/person-fill.svg" alt="" class="iconsImg">
+                    <h3 class="header_text">Iniciar sessão / Criar uma conta</h3>
+                </a>
+            </div>
+
+            <div class="anchoredHeaderElement">
+                <img src="" alt="" class="iconsImg">
+            </div>
 
         </section>
 
     </header>
 
     <!-- Carrosel -->
-    <section></section>
-    <hr>
-    <!-- Em destaque -->
     <section>
 
+        <section class="carouselContainer" id="mainCarousel">
+            <div class="carouselContent"><img class="carouselImage"
+                    src="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1300/ncom/en_US/merchandising/center-stage-stories/2026/01-January/TL/TomodachiLife-2880x900-Centerstage-DT-STATIC-PT_v01"
+                    alt="">
+                <div class="carouselTextContent">
+                    <div class="carouselTextContent_h2">
+                        <h2>Ajude suas criações Mii a viverem um vidão em Tomodachi Life: Living the Dream, disponível
+                            em
+                            16/04</h2>
+                    </div>
+                    <img src="https://classindportal.mj.gov.br/assets/Classificacao/Livre.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="carouselContent"><img class="carouselImage"
+                    src="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1300/ncom/en_US/merchandising/center-stage-stories/2026/04%20-%20April/Pokemon%20Champions/PokemonChampions-Centerstage-STATIC-Desktop_v02_1"
+                    alt="">
+                <div class="carouselTextContent">
+                    <h2>Batalhas Pokémon para todos</h2>
+                    <img src="https://classindportal.mj.gov.br/assets/Classificacao/14.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="carouselContent"><img class="carouselImage"
+                    src="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1300/ncom/en_US/merchandising/center-stage-stories/2026/03-March/The%20Super%20Mario%20Galaxy%20Movie/2880x900_SMGM-30926_desktop_PT"
+                    alt="">
+                <div class="carouselTextContent">
+                    <h2>Já nos cinemas! Saiba mais sobre Super Mario Galaxy: O Filme</h2>
+                    <img src="https://classindportal.mj.gov.br/assets/Classificacao/Livre.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="carouselContent"><img class="carouselImage"
+                    src="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1300/ncom/en_US/merchandising/center-stage-stories/2026/02-February/Pokemon%20Pokopia/2880x900-Pokemon_Pokopia_Available_Now_PT_Static"
+                    alt="">
+                <div class="carouselTextContent">
+                    <h2>Construa uma vida nova e aconchegante com Pokémon</h2>
+                    <img src="https://classindportal.mj.gov.br/assets/Classificacao/Livre.jpg" alt="">
+                </div>
+            </div>
+
+
+        </section>
+
+    </section>
+    <hr>
+    <!-- Em destaque -->
+    <section class="featured">
+
         <h2>Em destaque</h2>
+
+        <ul class="subCarouselContainer">
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/software/switch/70070000030770/0acaf709e29c57e125e90032853562562843757d238fec2815a52ec0409c6fd1"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>Super Mario Galaxy™ + Super Mario Galaxy™ 2</h5>
+                    <div class="miniLabel">
+                        <h3>Já disponível</h3>
+                    </div>
+                    <h3>Nintendo Switch</h3>
+                </div>
+            </li>
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/store/software/switch/70010000122818/3dc182614875be67f59bf1516d9a98d3281e3e30009a2dfd933d4de22e850e7f"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>Rhythm Heaven™ Groove</h5>
+                    <div class="miniLabel">
+                        <h3>Já disponível</h3>
+                    </div>
+                    <h3>Nintendo Switch</h3>
+                </div>
+            </li>
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/articles/2026/pokemon-firered-version-and-pokemon-leafgreen-version-are-now-available/2250x1266_PRG_now_EN"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>Pokémon FireRed Version e Pokémon LeafGreen Version</h5>
+                    <div class="miniLabel">
+                        <h3>Já disponível</h3>
+                    </div>
+                    <h3>Nintendo Switch</h3>
+                </div>
+            </li>
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/store/software/switch2/70050000069229/901218f8b149d63c90c125a3969db5f6d06f3a7cc649300b3e788116a21a84cd"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>Pacote de melhoria Super Mario Bros.™ Wonder – Nintendo Switch™ 2...</h5>
+                    <div class="miniLabel">
+                        <h3>Pacote de Melhoria</h3>
+                    </div>
+                    <h3>Nintendo Switch 2</h3>
+                </div>
+            </li>
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/store/software/switch2/70010000119859/38365bbf7b9057db9d299c7e213c3f0e671f9f0dba7129e5a59e69b2fddaecab"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>Descubra um mundo de criaturas extraordinárias!</h5>
+                    <div class="miniLabel">
+                        <h3>Reserve já</h3>
+                    </div>
+                    <h3>Nintendo Switch 2</h3>
+                </div>
+            </li>
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/articles/2026/unlock-rewards-for-starting-gamechat-only-with-nintendo-switch-online/CS-27768-GameChatMission-1920x1080-Web-WhatsNew_PT"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>Quer renovar seu ícone de usuário?</h5>
+                    <div class="miniLabel">
+                        <h3>Saiba mais</h3>
+                    </div>
+                    <h3>Nintendo Switch</h3>
+                </div>
+            </li>
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/merchandising/feature-banner/2025/EA%20SPORTS%20FC%2026/EA_SPORTS_FC_26"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>O Clube é Seu no EA SPORTS FC™ 26</h5>
+                    <div class="miniLabel">
+                        <h3>Já disponível</h3>
+                    </div>
+                    <h3>Nintendo Switch 2</h3>
+                </div>
+            </li>
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/store/software/switch2/70010000122446/b70759253478373e8f9a2d9bb1b2111e37baaca7f7d080b0633c2e690ac369b8"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>Explore um mundo cheio de magia da Disney!</h5>
+                    <div class="miniLabel">
+                        <h3>Já disponível</h3>
+                    </div>
+                    <h3>Nintendo Switch 2</h3>
+                </div>
+            </li>
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/software/switch-2/70010000097756/29e212a61e622133e16904cc8dcb80fe1df1f52b3beb53d5e1ba5bc0d64736a6"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>Monster Hunter Stories 3: Twisted Reflection
+                    </h5>
+                    <div class="miniLabel">
+                        <h3>Já disponível</h3>
+                    </div>
+                    <h3>Nintendo Switch 2</h3>
+                </div>
+            </li>
+
+            <li class="subCarousel"><img
+                    src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/store/software/switch2/70010000110905/2d6dab5f85ec8ca3cad02c291bedd04033982b9ebe393a53cbbb9b3bd20fb229"
+                    alt="">
+                <div class="subCarouselText">
+                    <h5>Minecraft Dungeons II</h5>
+                    <div class="miniLabel">
+                        <h3>Em breve</h3>
+                    </div>
+                    <h3>Nintendo Switch 2</h3>
+                </div>
+            </li>
+
+
+
+        </ul>
 
     </section>
     <hr>
@@ -148,6 +331,62 @@
 
             <h2>Novidades</h2>
 
+            <section class="news">
+
+                <div id="bigNewsOne" class="bigNews"><img
+                        src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/articles/2026/new-update-for-nintendo-switch-online-members-april-2026/2250x1266_Switch_News_NSO_Apr2026"
+                        alt="">
+                    <h4>09/04/26</h4>
+                    <h3>Nova atualização para os assinantes do Nintendo Switch Online</h3>
+                    <p>Opa! E aí, fãs de jogos clássicos! Se vocês estão pensando em criar, ou recriar, algumas memórias
+                        retrô, os assinantes* do Nintendo Switch Online </p>
+                    <a href="">Saiba Mais</a>
+                </div>
+
+                <div id="bigNewsTwo" class="bigNews"><img
+                        src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_600/ncom/en_US/articles/2026/get-battling-with-the-new-free-to-start-game-pokemon-champions/2250x1266_PC_launch"
+                        alt="">
+                    <h4>09/04/26</h4>
+                    <h3>Nova atualização para os assinantes do Nintendo Switch Online</h3>
+                    <p>Opa! E aí, fãs de jogos clássicos! Se vocês estão pensando em criar, ou recriar, algumas memórias
+                        retrô, os assinantes* do Nintendo Switch Online </p>
+                    <a href="">Saiba Mais</a>
+                </div>
+
+                <div id="miniNewsOne" class="miniNews"> <img
+                        src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/articles/2026/freshen-up-your-profile-pic-with-the-icon-maker/2250x1266_SMGicons_PT"
+                        alt="">
+                    <h4>09/04/26</h4>
+                    <h3>Nova atualização para os assinantes do Nintendo Switch Online</h3>
+                    <a href="">Saiba Mais</a>
+                </div>
+
+                <div id="miniNewsTwo" class="miniNews"> <img
+                        src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/articles/2026/mobile-news-earn-in-game-super-mario-run-rewards-inspired-by-the-super-mario-galaxy-movie/HPtopics_1920x1080_ww"
+                        alt="">
+                    <h4>09/04/26</h4>
+                    <h3>Nova atualização para os assinantes do Nintendo Switch Online</h3>
+                    <a href="">Saiba Mais</a>
+                </div>
+
+                <div id="miniNewsThree" class="miniNews"> <img
+                        src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/articles/2026/wahoo-see-the-platforming-history-of-super-mario-and-even-get-a-few-fun-facts/2250x1266_Mario2026"
+                        alt="">
+                    <h4>09/04/26</h4>
+                    <h3>Nova atualização para os assinantes do Nintendo Switch Online</h3>
+                    <a href="">Saiba Mais</a>
+                </div>
+
+                <div id="miniNewsFour" class="miniNews"> <img
+                        src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_300/ncom/en_US/articles/2026/unlock-rewards-for-starting-gamechat-only-with-nintendo-switch-online/CS-27768-GameChatMission-1920x1080-Web-WhatsNew_PT"
+                        alt="">
+                    <h4>09/04/26</h4>
+                    <h3>Nova atualização para os assinantes do Nintendo Switch Online</h3>
+                    <a href="">Saiba Mais</a>
+                </div>
+
+            </section>
+
         </section>
         <hr>
         <!-- Pague com Boleto ou PIX agora! -->
@@ -169,79 +408,866 @@
 
             <h2>Mais vendidos do Nintendo Switch</h2>
 
-        </section>
+            <section class="subCarouselContainerSecond" id="subCarouselContainerSecond">
 
-        <!-- Novos lançamentos do Nintendo Switch -->
-        <section class="main__section">
 
-            <h2>Novos lançamentos do Nintendo Switch</h2>
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
 
-        </section>
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b2a833c1959749b1878fe72d8bd55bb2_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Tomodachi Life™: Living the Dream</h5>
+                                <h6>Data de lançamento: 16/04/26</h6>
+                                <div class="miniLabel">
+                                    <h3>Reserve já</h3>
+                                </div>
+                                <h3>R$ 329,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice" style="display: flex ;"> <img src="./assets/nintendo-switch.svg"
+                                alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/cc2886d159304952b2124c4b635ab873_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Pokémon™ Pokopia</h5>
+                                <h6>05/03/26</h6>
+                                <h3>R$ 389,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/13923037cc834aa99aef2e3b9c681636_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Pokémon FireRed Version</h5>
+                                <h6>27/02/26</h6>
+                                <h3>R$ 109,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/9b9de0f12174492195da3136fa547feb_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Pokémon LeafGreen Version</h5>
+                                <h6>27/02/26</h6>
+                                <h3>R$ 109,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/0b6f02b82b77419c8c216d04c702b937_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Dying Light: Definitive Edition</h5>
+                                <h6>19/10/21</h6>
+                                <h3>R$ 249,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/951117aae76545beade2b86a68c6a38a_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Overcooked! 2</h5>
+                                <h6>27/04/21</h6>
+                                <h3>R$ 133,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/5662764566f24c02845e141c0c9eee5a_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Super Smash Bros.™ Ultimate</h5>
+                                <h6>07/12/18</h6>
+                                <h3>R$ 329,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://i.pinimg.com/736x/dd/c9/14/ddc91405ebf909d23b222de81e9fbea3.jpg" alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Isso não era para estar aqui...</h5>
+                                <h6>Vamos fazer vista grossa e continuar</h6>
+                                <h3>Grátis</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>Ave</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice""> <img src=" ./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/9903f0db40d243a485cea35f6f3ff7d4_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Super Mario Party™ Jamboree</h5>
+                                <h6>17/10/24</h6>
+                                <h3>R$ 329,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice" style="display: flex;"> <img src="./assets/nintendo-switch.svg"
+                                alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/dea49befb7bb427dae0cc4dcd3261752_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Mario Kart™ World</h5>
+                                <h6>05/06/25</h6>
+                                <h3>R$ 329,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/837e15dbaffa4b51b16baa7ba332114b_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Stardew Valley</h5>
+                                <h6>02/05/19</h6>
+                                <h3>R$ 24,99</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/45f7ec12c34f431ebd044919028e97d5_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Mario Kart™ 8 Delux</h5>
+                                <h6>28/04/17</h6>
+                                <h3>R$ 329,90</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div>
+                    <a href="" class="linkToOther">
+                        <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                            <h4>2</h4>
+                        </div>
+                        <div class="subCarouselSecond">
+
+                            <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/4222af9ec7fb4b9ba66604e3ec4bc9ae_1024"
+                                alt="">
+                            <div class="subCarouselSecondText">
+                                <h5>Among Us</h5>
+                                <h6>15/12/20</h6>
+                                <h3>R$ 18,50</h3>
+                                <div class="subCarouselSecond_tagAndBtn">
+                                    <div class="subCarouselSecond_tagOnly">
+                                        <img src="./assets/dpad-fill.svg" alt="">
+                                        <h6>jogos</h6>
+                                    </div>
+                                    <button class="subCarouselSecond_btnOnly"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- Novos lançamentos do Nintendo Switch -->
+            <section>
+
+                <h2>Novos lançamentos do Nintendo Switch</h2>
+
+                <section class="subCarouselContainerThird" id="subCarouselContainerThird">
+
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b2a833c1959749b1878fe72d8bd55bb2_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Tomodachi Life™: Living the Dream</h5>
+                                    <h6>Data de lançamento: 16/04/26</h6>
+                                    <div class="miniLabel">
+                                        <h3>Reserve já</h3>
+                                    </div>
+                                    <h3>R$ 329,90</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice" style="display: flex;"> <img src="./assets/nintendo-switch.svg"
+                                    alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/5d19cb7c6966436394ffc0ccadd47e4c_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Animal Crossing™: New Horizons...</h5>
+                                    <h6>15/01/26</h6>
+                                    <h3>R$ 329,90</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice" style="display: flex;"> <img src="./assets/nintendo-switch.svg"
+                                    alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/222a033e3e1c460b89a7f6a4d27d2a02_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Fallout 4: Anniversary Edition</h5>
+                                    <h6>24/02/26</h6>
+                                    <h3>R$ 329,90</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice" style="display: flex ;"> <img src="./assets/nintendo-switch.svg"
+                                    alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/cc2886d159304952b2124c4b635ab873_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Pokémon™ Pokopia</h5>
+                                    <h6>05/03/26</h6>
+                                    <h3>R$ 389,90</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/13923037cc834aa99aef2e3b9c681636_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Pokémon FireRed Version</h5>
+                                    <h6>27/02/26</h6>
+                                    <h3>R$ 109,90</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/9b9de0f12174492195da3136fa547feb_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Pokémon LeafGreen Version</h5>
+                                    <h6>27/02/26</h6>
+                                    <h3>R$ 109,90</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice" style="display: flex;"> <img src="./assets/nintendo-switch.svg"
+                                    alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c4009f43a6af4528a6b6c79ebcb833a1_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Yakuza Kiwami 3 & Dark Ties</h5>
+                                    <h6>12/02/26</h6>
+                                    <h3>R$ 296,50</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/559bc67d68464308b093264d484567cf_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>SUPER BOMBERMAN COLLECTION</h5>
+                                    <h6>05/02/26</h6>
+                                    <h3>R$ 296,50</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/d5b8eb510565429cb4b5bc1b15c2de65_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>The Perfect Pencil</h5>
+                                    <h6>29/01/26</h6>
+                                    <h3>R$ 73,59</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice" style="display: flex;"> <img src="./assets/nintendo-switch.svg"
+                                    alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/b7a92754c7f24e5ba9716b6e2985e132_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Goat Simulator 3</h5>
+                                    <h6>01/04/26</h6>
+                                    <h3>R$ 159,99</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice" style="display: flex;"> <img src="./assets/nintendo-switch.svg"
+                                    alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/85542a018ae74682b7a1fcd05311d3be_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Mario Tennis™ Fever</h5>
+                                    <h6>12/02/26</h6>
+                                    <h3>R$ 389,90</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/a774b8dd605b4f9cab821909395bc3c3_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>RUBATO</h5>
+                                    <h6>20/03/26</h6>
+                                    <h3>R$ 108,80</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/abc0a3464f4c40d1934504987d435c0d_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Bonnie Bear Saves Frogtime</h5>
+                                    <h6>16/03/26</h6>
+                                    <h3>R$ 36,99</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice" style="display: flex;"> <img src="./assets/nintendo-switch.svg"
+                                    alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/bb7393e0c6d94807bc80c5d87c6f6680_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Resident Evil Requiem</h5>
+                                    <h6>27/02/26</h6>
+                                    <h3>R$ 339,00</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice" style="display: flex;"> <img src="./assets/nintendo-switch.svg"
+                                    alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/5a7e5f07b6054351b9dfb6869237aaee_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Kirby™ Air Riders</h5>
+                                    <h6>20/11/25</h6>
+                                    <h3>R$ 389,90</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice"> <img src="./assets/nintendo-switch.svg" alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/e10b15d29ab84605b20cbb2a6fdc3a0d_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>PARANORMASIGHT: The Mermaid's Curse</h5>
+                                    <h6>19/02/26</h6>
+                                    <h3>R$ 142,50</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="" class="linkToOther">
+                            <div class="nintendoDevice" style="display: flex;"> <img src="./assets/nintendo-switch.svg"
+                                    alt="">
+                                <h4>2</h4>
+                            </div>
+                            <div class="subCarouselSecond">
+
+                                <img src="https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/dae7c1d538294612b118c923cda53ba9_1024"
+                                    alt="">
+                                <div class="subCarouselSecondText">
+                                    <h5>Hyrule Warriors: Age of Imprisonment</h5>
+                                    <h6>06/11/25</h6>
+                                    <h3>R$ 73,59</h3>
+                                    <div class="subCarouselSecond_tagAndBtn">
+                                        <div class="subCarouselSecond_tagOnly">
+                                            <img src="./assets/dpad-fill.svg" alt="">
+                                            <h6>jogos</h6>
+                                        </div>
+                                        <button class="subCarouselSecond_btnOnly"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+
+            </section>
     </main>
-    <div class="footer_logo"><h2 class="logo_css">Nintendo®</h2></div>
+    <div class="kirby"><img src="./assets/029fd223b0039538e958629d62d35747.png" alt="" draggable="false"></div>
+    <div class="footer_logo">
+        <h2 class="logo_css">Nintendo®</h2>
+    </div>
     <footer>
         <section>
             <section class="footerSection_div">
-                
-                    <ul>
-                        <h3>Sobre a Nintendo (em inglês)</h3>
-                        <li><a class="linkStyle" href="">Responsabilidade social corporativa</a></li>
-                    </ul>
-                
-                
-                    <ul>
-                        <h3>Loja</h3>
-                        <li  target="_blank"><a class="linkStyle" href="">Jogos</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Hardware</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Ofertas e promoções</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Nintendo Switch Online</a></li>
-                    </ul>
-                
-                
-                    <ul>
-                        <h3>Assistência</h3>
-                        <li  target="_blank"><a class="linkStyle" href="">Nintendo Switch</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Nintendo Switch 2</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Conta Nintendo</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Apps e outros produtos</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Outros consoles</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Centro de serviços</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Garantia</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Informações sobre produtos licenciados</a></li>
-                    </ul>
-                
-                
-                    <ul>
-                        <h3>Pais</h3>
-                        <li  target="_blank"><a class="linkStyle" href="">Informação para os pais</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Controle dos pais</a></li>
-                    </ul>
-                
-                
-                    <ul>
-                        <h3>Privacidade</h3>
-                        <li  target="_blank"><a class="linkStyle" href="">Política de privacidade</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Cookies e anúncios com base em interesses</a></li>
-                    </ul>
-                
-                
-                    <ul>
-                        <h3>Comunidade</h3>
-                        <li  target="_blank"><a class="linkStyle" href="">Diretrizes comunitárias</a></li>
-                        <li  target="_blank"><a class="linkStyle" href="">Segurança online</a></li>
-                    </ul>
-                
-                
-                    <ul>
-                        <h3>Documentação e política</h3>
-                        <li  target="_blank"><a class="linkStyle" href="">Precauções de segurança e saúde</a></li>
-                    </ul>
-                
+
+                <ul>
+                    <h3>Sobre a Nintendo (em inglês)</h3>
+                    <li><a class="linkStyle" href="">Responsabilidade social corporativa</a></li>
+                </ul>
+
+
+                <ul>
+                    <h3>Loja</h3>
+                    <li target="_blank"><a class="linkStyle" href="">Jogos</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Hardware</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Ofertas e promoções</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Nintendo Switch Online</a></li>
+                </ul>
+
+
+                <ul>
+                    <h3>Assistência</h3>
+                    <li target="_blank"><a class="linkStyle" href="">Nintendo Switch</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Nintendo Switch 2</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Conta Nintendo</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Apps e outros produtos</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Outros consoles</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Centro de serviços</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Garantia</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Informações sobre produtos licenciados</a></li>
+                </ul>
+
+
+                <ul>
+                    <h3>Pais</h3>
+                    <li target="_blank"><a class="linkStyle" href="">Informação para os pais</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Controle dos pais</a></li>
+                </ul>
+
+
+                <ul>
+                    <h3>Privacidade</h3>
+                    <li target="_blank"><a class="linkStyle" href="">Política de privacidade</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Cookies e anúncios com base em interesses</a></li>
+                </ul>
+
+
+                <ul>
+                    <h3>Comunidade</h3>
+                    <li target="_blank"><a class="linkStyle" href="">Diretrizes comunitárias</a></li>
+                    <li target="_blank"><a class="linkStyle" href="">Segurança online</a></li>
+                </ul>
+
+
+                <ul>
+                    <h3>Documentação e política</h3>
+                    <li target="_blank"><a class="linkStyle" href="">Precauções de segurança e saúde</a></li>
+                </ul>
+
             </section>
-            <div></div>
         </section>
-        <div></div>
+
     </footer>
+    <div class="second_footer"><p style="color: white;">© Nintendo. Os jogos são propriedade de seus respectivos donos. Nintendo of America Inc.
+            A sede está localizada em Redmond, Washington (EUA).</p>
+            <p style="color: white;">Esse site possui finalidade didática. Qualquer intenção de remoção de conteúdo, por favor, entre em contato através de meu e-mail: valentinomc.contato@gmail.com</p>
+    </div>
+
+    <script src="./index.js" defer></script>
 </body>
 
 </html>
