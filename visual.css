@@ -7,14 +7,16 @@
 }
 
 
-body {background-color: var(--background_white);}
+
+body {
+    background-color: var(--background_white);
+}
 
 h2,
 h3,
 p {
     color: var(--second_color);
 }
-
 
 
 header {
@@ -51,7 +53,9 @@ header {
     height: 15px;
 }
 
-#anchoredHeaderElement__hearth {filter: invert(27%) sepia(14%) saturate(15%) hue-rotate(353deg) brightness(94%) contrast(90%);}
+#anchoredHeaderElement__hearth {
+    filter: invert(27%) sepia(14%) saturate(15%) hue-rotate(353deg) brightness(94%) contrast(90%);
+}
 
 hr {
     background-color: var(--second_color);
@@ -94,4 +98,89 @@ li {
 
 .second_footer {
     background-color: var(--second_color);
+    padding-bottom: 200px;
+}
+
+@media screen and (max-width:600px) {
+
+    ul {
+        border: none;
+    }
+
+    .storeLogo {
+        background-color: var(--main_color);
+        padding: 10px;
+        width: 180px;
+    }
+
+
+}
+
+@media screen and (min-width: 1050px) {
+
+    .navMobileContainer {
+        display: none;
+    }
+
+    .navMobile {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    .navMobileContainer {
+        display: flex;
+
+    }
+
+    .navMobile {
+        display: none;
+    }
+
+}
+
+
+
+.navMobileContainer {
+    justify-content: center;
+}
+
+.navMobile {
+    width: 90%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: #0000006b 0 4px 8px;
+
+}
+
+.navMobile>a {
+    margin: 10px;
+}
+
+.navMobile>a>img {
+    height: 40px;
+    transition: transform 0.3s;
+    transform: scale(1);
+
+}
+
+#bigBtn {
+    height: 70px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #e60012;
+}
+
+.navMobile>a>img:hover {
+    transition: transform 0.3s;
+    transform: scale(1.2);
+    cursor: pointer;
 }

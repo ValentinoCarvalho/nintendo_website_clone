@@ -53,7 +53,7 @@
     border: none;
     scroll-behavior: smooth;
     anchor-name: --subCarouselContainer;
-    padding-top:10px ;
+    padding-top: 10px;
 }
 
 .subCarouselContainer::-webkit-scrollbar {
@@ -380,4 +380,44 @@
 .subCarouselContainerThird::scroll-button(left):disabled {
     opacity: 0.2;
     cursor: default;
+}
+
+@media screen and (max-width:600px) {
+
+    .subCarouselContainerThird::scroll-button(right),
+    .subCarouselContainerThird::scroll-button(left) {
+        display: none;
+    }
+
+    .subCarouselContainerSecond::scroll-button(right),
+    .subCarouselContainerSecond::scroll-button(left) {
+        display: none;
+    }
+
+    .subCarouselContainer::scroll-button(right),
+    .subCarouselContainer::scroll-button(left) {
+        display: none;
+    }
+
+    .carouselTextContent {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        height: auto;
+        padding: 0 50px 0 50px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .carouselTextContent>img {
+        height: 30px;
+    }
+
+    .carouselTextContent > h2 { font-size: medium;}
+
+    .carouselTextContent_h2 > h2 {
+        width: 70%;
+        font-size: small;
+    }
+
 }
