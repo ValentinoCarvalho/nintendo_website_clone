@@ -1,3 +1,7 @@
+.carouselFirst {
+    margin-bottom: 40px;
+}
+
 .carouselContainer {
     display: flex;
     flex-direction: row;
@@ -363,7 +367,7 @@
 .subCarouselContainerThird::scroll-button(right):hover {
     opacity: 1;
     transition: opacity 0.3s, transform 0.3s;
-    transform: scale(1.02);
+    transform: scale(1);
 }
 
 .subCarouselContainerThird::scroll-button(right) {
@@ -381,6 +385,34 @@
     opacity: 0.2;
     cursor: default;
 }
+
+.seeMore {
+    scroll-snap-align: start;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 460px;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 15px;
+    justify-content: center;
+    transition: opacity 0.3s, transform 0.3s, background-color 0.3s ;
+    transform: scale(1);
+    margin-right:20px ;
+}
+
+.seeMore:hover {
+    background-color: rgb(216, 6, 6);
+    transition: opacity 0.3s, transform 0.3s, background-color 0.3s ;
+    transform: scale(1.02);
+}
+
+.seeMore>h4 {
+    color: white;
+    text-decoration: none;
+}
+
 
 @media screen and (max-width:600px) {
 
@@ -413,9 +445,11 @@
         height: 30px;
     }
 
-    .carouselTextContent > h2 { font-size: medium;}
+    .carouselTextContent>h2 {
+        font-size: medium;
+    }
 
-    .carouselTextContent_h2 > h2 {
+    .carouselTextContent_h2>h2 {
         width: 70%;
         font-size: small;
     }

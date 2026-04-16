@@ -24,9 +24,9 @@ header {
 }
 
 .searchBtn {
-    background-image: url(./assets/search.svg);
+    background-image: url(./assets/magnifying-glass-solid-full\ \(1\).svg);
     background-repeat: no-repeat;
-    background-position: 10px 4px;
+    background-position: 10px 0px;
     text-align: left;
     padding: 0 15px 0 35px;
     border-style: none;
@@ -37,6 +37,12 @@ header {
     background-color: var(--main_color);
     padding: 10px;
     width: 215px;
+}
+
+.nintendoLogo {
+    height: 50px;
+    width: 200px;
+    object-fit: cover;
 }
 
 #anchoredHeaderElement__login {
@@ -51,6 +57,8 @@ header {
 .iconsImg {
     filter: invert(16%) sepia(59%) saturate(6287%) hue-rotate(348deg) brightness(86%) contrast(115%);
     height: 15px;
+    height: 20px;
+    margin-right: 4px;
 }
 
 #anchoredHeaderElement__hearth {

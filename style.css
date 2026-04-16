@@ -19,6 +19,7 @@ header {
 
 .anchoredHeaderElement>a {
     text-decoration: none;
+    padding-top: 10px;
 }
 
 .header_text {
@@ -35,6 +36,7 @@ header {
 
 .anchoredHeaderElement {
     display: flex;
+    align-items: center;
 }
 
 #search_favorites_login {
@@ -54,6 +56,17 @@ header {
 #anchoredHeaderElement__login>h3 {
     position: relative;
     top: 5px;
+}
+
+.controlMainCasousel {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.controlMainCasousel > input {
+    transform: scale(1.5);
+    accent-color: var(--main_color);
 }
 
 main {
@@ -158,6 +171,12 @@ ul {
 
 @media screen and (max-width:600px) {
 
+    .controlMainCasousel {
+    display: none;
+    justify-content: center;
+    gap: 70px;
+}
+
     .kirby {
         display: none;
     }
@@ -211,6 +230,6 @@ ul {
     .Container_Header>div {
         display: none;
     }
-    
+
 
 }
